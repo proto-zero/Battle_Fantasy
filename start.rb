@@ -1,4 +1,4 @@
-require "./rpgbattle.rb"
+require "./combat.rb"
 require "colorize"
 
 # Variables
