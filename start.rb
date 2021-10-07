@@ -1,5 +1,6 @@
 require "./combat.rb"
 require "colorize"
+require 'io/console'
 
 # Variables
 lw = 60
@@ -44,7 +45,7 @@ while looping
   grid[i][j] = "* ".colorize(:red)
 
   # Player movement
-  move = gets.chomp
+  move = STDIN.getch
   if move == "w" && x != 0
     x -= 1
   elsif move == "s" && x < size - 1
